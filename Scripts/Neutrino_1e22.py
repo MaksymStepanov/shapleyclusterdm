@@ -6,7 +6,7 @@ import os
 from scipy.interpolate import interp1d
 
 def PlotAuger():
-  # Вхідні точки
+  # input points
  points = [
     (3.858511092348869e+16, 7.770391317284889e-8),
     (1.2915496650148827e+17, 1.843886844278565e-8),
