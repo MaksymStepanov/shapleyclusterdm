@@ -31,15 +31,6 @@ def modification_factor2(E_TeV, z):
 
 
 
-def modification_factor(E_TeV, z, lambda_0=100, beta=1.1, alpha=1.0):
-
-    d = cosmo.comoving_distance(z).to(u.Mpc).value
-    E_eV = E_TeV * 1e12
-    lambda_E = lambda_0 * (E_eV / 1e19) ** beta
-    return np.exp(- (d / lambda_E) ** alpha)
-
-
-
 def PlotOmazh2():
       # Energy log10(E/eV) values
     logE = np.array([
